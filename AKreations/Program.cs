@@ -46,7 +46,7 @@ namespace AKreations
                         break;
 
                     case "4":
-                        PrintProducts();
+                        //PrintProducts();
                         break;
 
                     case "0":
@@ -59,12 +59,13 @@ namespace AKreations
             } while (ProdOption != "0");
         }
 
-        static void PrintProducts()
-        {
-            foreach (var addProducts in Store.products)
-            {
-                Console.WriteLine("Product Catogory: {0}, Product Item Name: {1}", addProducts.Catogery, addProducts.ProductName);
-            }
-        }
+ //      static void PrintProducts()
+  //      {
+    //        foreach (var addProducts in Store.products)
+      //      {
+        //        Console.WriteLine("Product Catogory: {0}, Product Item Name: {1}", addProducts.Catogery, addProducts.ProductName);
+          //  }
+        //}
+//
     }
 }

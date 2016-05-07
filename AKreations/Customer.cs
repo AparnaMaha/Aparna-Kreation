@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,8 @@ namespace AKreations
         /// <summary>
         /// customer / member mailing and card address, email, phone number
         /// </summary>
-        #region Customer    
+        #region Customer  
+        [Key]  
         public int CustNum { get; set; }
         public string CustName { get; set; }
         #region MailingAddress

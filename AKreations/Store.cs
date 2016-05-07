@@ -9,7 +9,7 @@ namespace AKreations
     public static class Store
     {
         #region
-        public static List<Product> products = new List<Product>();
+        public static ProductModel db = new ProductModel();
         #endregion
         public static Product AddProduct(string prodCatogory, string prodItemName, double prodAmount, int prodItemQty, string prodDesc)
         {
@@ -21,7 +21,8 @@ namespace AKreations
                 Quantity = prodItemQty,
                 Description = prodDesc
             };
-            products.Add(product);
+            db.products.Add(product);
+            db.SaveChanges();
             return product;
         }
 
